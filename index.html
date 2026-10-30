@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CodeFusion Digital Explorers — Programme d’éducation numérique</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="#top"><i></i>CodeFusion Digital Explorers</a>
+<nav aria-label="Navigation principale">
+<a href="#vision">Vision</a>
+<div class="dd"><button aria-expanded="false" aria-haspopup="true">Pédagogie</button><div class="menu"><a href="#parcours">Parcours</a><a href="#programme">Programme</a><a href="#seance">Séance</a><a href="#briefs">Briefs</a><a href="#competences">Compétences</a><a href="#evaluation">Évaluation</a></div></div>
+<a href="#evenements">Événements</a>
+<div class="dd"><button aria-expanded="false" aria-haspopup="true">Organisation</button><div class="menu"><a href="#cadre">Cadre et sécurité</a><a href="#equipe">Équipe et moyens</a><a href="#lancement">Lancement</a></div></div>
+</nav>
+<a class="hbtn" href="auth.html">Espace en ligne</a>
+<button id="th" aria-label="Changer de thème">◐</button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<small>CodeFusion</small>
+<h1>Découvrir. Expérimenter. <span>Créer.</span> Innover.</h1>
+<p class="lead">Un programme annuel d’éducation numérique pour les jeunes du collège et du lycée : de la découverte du numérique à la réalisation de projets concrets.</p>
+<a class="btn" href="#parcours">Choisir un parcours</a><a class="btn ghost" href="#programme">Voir le programme</a>
+</div>
+<div class="term" aria-hidden="true"><div class="bar"><b></b><b></b><b></b></div><pre id="code"></pre></div>
+</div></div>
+
+<section id="vision"><div class="wrap">
+<div class="hd rv"><h2>Former les créateurs du numérique de demain</h2><p>Un parcours progressif pour passer de la découverte à la réalisation de projets concrets, en complément du parcours scolaire.</p></div>
+<div class="g3 vis rv">
+<div class="card"><h3>Découvrir</h3><p class="mut">Comprendre le numérique, ses usages, ses opportunités et ses responsabilités.</p></div>
+<div class="card"><h3>Expérimenter</h3><p class="mut">Apprendre par la pratique : logique, programmation, prototypage et collaboration.</p></div>
+<div class="card"><h3>Créer</h3><p class="mut">Concevoir des solutions utiles, les tester, les améliorer et les présenter.</p></div>
+</div>
+<div class="stats rv">
+<div class="stat"><b id="st-m" data-n="10" data-p="9–">0</b><span>mois, sur l’année scolaire</span></div>
+<div class="stat"><b id="st-s" data-n="2">0</b><span>séances par semaine, en présentiel</span></div>
+<div class="stat"><b id="st-w" data-n="36">0</b><span>semaines de progression</span></div>
+<div class="stat"><b data-n="6">0</b><span>phases, de l’immersion au projet final</span></div>
+</div>
+<div class="calc rv">
+<div><h3 style="font-size:26px;margin-bottom:18px">Calculez le volume horaire</h3>
+<label>Durée d’une séance</label><div class="seg" id="dur"><button data-v="1.5">1 h 30</button><button data-v="2" class="on">2 h</button><button data-v="3">3 h</button></div>
+<label for="wk">Semaines de cours : <span id="wkv">36</span></label><input type="range" id="wk" min="20" max="48" value="36">
+<label for="spw">Séances par semaine : <span id="spwv">2</span></label><input type="range" id="spw" min="1" max="5" value="2">
+<label for="grp">Nombre de groupes : <span id="grpv">1</span></label><input type="range" id="grp" min="1" max="10" value="1">
+<label for="jpg">Jeunes par groupe : <span id="jpgv">15</span></label><input type="range" id="jpg" min="5" max="30" value="15"></div>
+<div><output id="hrs">144 h</output><p id="ses" style="margin-top:10px;color:#cfdaf0"></p><p id="tot" style="margin-top:10px;color:#cfdaf0"></p><p style="margin-top:10px;font-size:14px;color:#9fb0cf">Ajustez les paramètres pour estimer le volume horaire, le nombre de jeunes et les heures d’encadrement. Calendrier et effectifs restent à confirmer avant la budgétisation.</p></div>
+</div>
+</div></section>
+
+<section id="parcours" class="alt"><div class="wrap">
+<div class="hd rv"><h2>Trois parcours de progression</h2><p>Le niveau scolaire oriente le parcours ; les acquis réels et la maturité numérique guident le positionnement après un diagnostic initial.</p></div>
+<div class="tabs" id="tabs" role="tablist"></div>
+<div class="pane" id="pane"></div>
+</div></section>
+
+<section id="programme" class="dk"><div class="wrap">
+<div class="hd rv"><h2>Une progression en six phases</h2><p>Trame indicative sur 36 semaines, complétable par 1 à 4 semaines de consolidation : rattrapage, défis, visites, rencontres et exposition des projets. Cliquez sur une phase.</p></div>
+<div class="tl" id="tl" role="tablist"></div>
+<div class="ph" id="ph" aria-live="polite"></div>
+</div></section>
+
+<section id="seance"><div class="wrap">
+<div class="hd rv"><h2>Une séance de 2 heures, orientée pratique</h2><p>La pratique occupe la majorité du temps : les jeunes expérimentent, se trompent, corrigent et expliquent leurs choix.</p></div>
+<div class="sess" id="sess"></div>
+<p class="sinfo" id="sinfo"></p>
+<div class="three rv" style="margin-top:54px"><div><span class="n">1</span><b>Imiter</b><p class="mut">Reproduire une solution avec accompagnement.</p></div><div><span class="n">2</span><b>Adapter</b><p class="mut">Modifier et améliorer une solution existante.</p></div><div><span class="n">3</span><b>Transposer</b><p class="mut">Réutiliser ses acquis dans un nouveau contexte.</p></div></div>
+<div class="ex rv"><b>Exemple en Python.</b> Reproduire une calculatrice guidée, puis ajouter des opérations et des contrôles, puis concevoir un outil personnel de suivi de notes.</div>
+<div class="card rv" style="margin-top:30px"><h3>Un projet organisé comme Scrum</h3><p class="mut">Un cadre léger pour deux séances par semaine, sans stand-up quotidien : backlog des besoins, sprint planning pour 1 à 2 semaines, point d’équipe de 5 minutes (fait, à faire, blocage), sprint review, puis rétrospective. Les rôles tournent pour découvrir plusieurs responsabilités.</p></div>
+</div></section>
+
+<section id="briefs" class="dk"><div class="wrap">
+<div class="hd rv"><h2>Chaque projet commence par un brief</h2><p>Comme en entreprise, les jeunes reçoivent une mission avec un contexte réel, des livrables et des critères connus dès le départ. Ils s’organisent, cherchent, produisent, puis présentent leur travail.</p></div>
+<div class="safe rv">
+<div><b>Contexte</b>La situation et le « client » : association, école, entreprise ou besoin local.</div>
+<div><b>Mission</b>Ce qu’il faut concevoir, formulé en une phrase claire.</div>
+<div><b>Livrables</b>Ce qui est rendu : code, dépôt GitHub, maquette, prototype, présentation.</div>
+<div><b>Critères de réussite</b>Comment le travail sera évalué, partagés avec les jeunes au lancement.</div>
+<div><b>Modalités</b>Durée, travail seul ou en équipe, ressources et jalons intermédiaires.</div>
+<div><b>Compétences visées</b>Les compétences du référentiel mobilisées et évaluées.</div>
+</div>
+<div class="cyc rv">
+<div><b>1. Lancement</b><small>Lecture du brief, questions, constitution des équipes.</small></div>
+<div><b>2. Veille</b><small>Recherche, découverte des notions, premières maquettes.</small></div>
+<div><b>3. Réalisation</b><small>Sprints courts, points d’équipe, accompagnement du formateur.</small></div>
+<div><b>4. Rendu</b><small>Dépôt des livrables sur l’espace en ligne avant l’échéance.</small></div>
+<div><b>5. Restitution</b><small>Présentation, retours, évaluation des compétences.</small></div>
+</div>
+<h3 style="font-size:24px;margin-bottom:18px">Exemples de briefs</h3>
+<div class="tabs" id="bt" role="tablist"></div>
+<div id="bf" aria-live="polite"></div>
+</div></section>
+
+<section id="competences" class="alt"><div class="wrap">
+<div class="hd rv"><h2>Un référentiel de compétences équilibré</h2><p>Les compétences sont observées dans les activités et les projets, puis validées progressivement.</p></div>
+<div class="chips"><button class="chip on" data-k="CT">Compétences techniques</button><button class="chip" data-k="CS">Compétences transversales</button></div>
+<div class="cl" id="cl"></div>
+</div></section>
+
+<section id="evaluation"><div class="wrap">
+<div class="hd rv"><h2>Évaluer la progression, pas seulement le résultat</h2><p>Une évaluation formative et régulière, adaptée à l’âge : diagnostic au départ, observation pendant les séances, projet, puis restitution orale.</p></div>
+<h3 style="font-size:22px;margin-bottom:18px">Exemple de pondération, à discuter</h3>
+<div class="bars" id="bars"></div>
+<div class="g3 rv" style="margin-top:44px">
+<div class="card"><h3>Référentiel</h3><p class="mut">Compétences attendues et niveaux de maîtrise.</p></div>
+<div class="card"><h3>Carnet de progression</h3><p class="mut">Observations, acquis, défis réussis et prochaines étapes.</p></div>
+<div class="card"><h3>Portfolio</h3><p class="mut">Projets, code, documentation, présentations et retours.</p></div>
+</div>
+<p class="mut rv" style="margin-top:22px">Valorisation possible : attestation de participation et portfolio ; lorsque les preuves sont suffisantes, validation de compétences selon une grille transparente.</p>
+</div></section>
+
+<section id="evenements" class="alt"><div class="wrap">
+<div class="hd rv"><h2>Des événements pour apprendre autrement</h2><p>Hackathons, visites d’entreprises, rencontres et défis rythment l’année : ils relient les apprentissages au monde réel et motivent les jeunes. Programme indicatif, à caler avec les partenaires. Filtrez par type.</p></div>
+<div class="seg" id="evf"></div>
+<div class="ev" id="ev"></div>
+<div class="hd rv" style="margin-top:80px"><h2>Exemples de déroulé</h2><p>Des formats prêts à adapter selon les lieux, les partenaires et l’âge des participants.</p></div>
+<div class="seg" id="agf"></div>
+<div class="card ag" id="ag"></div>
+</div></section>
+
+<section id="cadre" class="dk"><div class="wrap">
+<div class="hd rv"><h2>Un programme conçu pour accueillir des mineurs</h2><p>La sécurité, la protection des données et l’encadrement font partie intégrante du dispositif.</p></div>
+<div class="safe rv">
+<div><b>Encadrement</b>Adultes référents, règles de groupe et procédures de signalement.</div>
+<div><b>Données personnelles</b>Collecte minimale, accès limités et comptes adaptés à l’âge.</div>
+<div><b>Comptes en ligne</b>Usage encadré des outils collaboratifs et des dépôts publics.</div>
+<div><b>Droit à l’image</b>Autorisation parentale distincte pour photos et publications.</div>
+<div><b>Équipements</b>Consignes de sécurité pour circuits, outils et composants.</div>
+<div><b>Publication</b>Validation des projets et contenus avant diffusion.</div>
+</div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+<div class="hd rv"><h2>Une équipe pluridisciplinaire, des moyens concrets</h2><p>Les fonctions peuvent être combinées au démarrage. Les intervenants seront formés à la pédagogie active et à l’encadrement d’un public adolescent.</p></div>
+<table class="team rv"><tbody>
+<tr><td>Responsable du programme</td><td class="mut">Coordination, partenariats, suivi global et qualité.</td></tr>
+<tr><td>Formateur référent</td><td class="mut">Progression pédagogique, animation et suivi des groupes.</td></tr>
+<tr><td>Intervenant technique</td><td class="mut">Python, web, Git et accompagnement des projets.</td></tr>
+<tr><td>Spécialiste robotique / IoT</td><td class="mut">Ateliers pratiques, matériel et sécurité technique.</td></tr>
+<tr><td>Coordination administrative</td><td class="mut">Inscriptions, autorisations, communication et logistique.</td></tr>
+</tbody></table>
+<div class="g3 rv" style="margin-top:40px">
+<div class="card"><h3>Espaces et matériel</h3><p class="mut">Salle informatique, un poste par jeune si possible, connexion internet, vidéoprojecteur, stockage sécurisé, tables de prototypage.</p></div>
+<div class="card"><h3>Kits et composants</h3><p class="mut">Micro:bit ou Arduino, ESP32 selon le parcours, capteurs, LED, moteurs, câbles, breadboards et consommables.</p></div>
+<div class="card"><h3>Environnement logiciel</h3><p class="mut">Python avec Thonny ou VS Code, Scratch et MakeCode, Git et GitHub, Figma ou Canva. Outils gratuits ou éducatifs en priorité.</p></div>
+</div>
+</div></section>
+
+<section id="lancement" class="alt"><div class="wrap">
+<div class="hd rv"><h2>Préparer le lancement en quatre temps</h2><p>Calendrier indicatif, à adapter à la date réelle de démarrage. Jalon final : une journée de démonstration, la remise des attestations et un bilan partagé avec les partenaires.</p></div>
+<div class="steps rv">
+<div><span>Deux mois avant</span><b>Cadrage</b><p class="mut">Valider public, groupes, référentiel, partenaires et budget.</p></div>
+<div><span>Un mois avant</span><b>Préparation</b><p class="mut">Équiper les salles, préparer les supports et mobiliser l’équipe.</p></div>
+<div><span>Mois 1</span><b>Démarrage</b><p class="mut">Informer les familles, diagnostiquer et constituer les groupes.</p></div>
+<div><span>Mois 2 à 9 ou 10</span><b>Déploiement</b><p class="mut">Animer, suivre les compétences, ajuster et valoriser les projets.</p></div>
+</div>
+<div class="hd rv" style="margin-top:80px"><h2>Les décisions à prendre</h2><p>Cette version est une base de discussion. Cochez au fur et à mesure ce qui est confirmé avant le budget.</p></div>
+<div class="prog"><i id="pg"></i></div>
+<div class="ok"><ul id="ok"></ul></div>
+</div></section>
+
+<section><div class="wrap">
+<div class="hd rv"><h2>Construire le projet avec l’écosystème</h2><p>Établissements scolaires, acteurs institutionnels, entreprises et experts : soutien financier, équipements, mentorat, visites d’entreprises, challenges, prix et démonstrations publiques.</p></div>
+<div class="dl rv"><dt>Culture numérique</dt><dd>Utiliser les outils avec discernement et responsabilité.</dd><dt>Logique et code</dt><dd>Décomposer un problème et programmer une solution simple.</dd><dt>Création</dt><dd>Produire une réalisation numérique ou un prototype.</dd><dt>Collaboration</dt><dd>Contribuer à un projet et documenter son travail.</dd><dt>Expression</dt><dd>Présenter une réalisation et expliquer sa démarche.</dd><dt>Projection</dt><dd>Découvrir les métiers, parcours et opportunités du numérique.</dd></dl>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<h2>Donner aux jeunes le pouvoir de créer avec le numérique.</h2>
+<p>CodeFusion<br>Document de cadrage pédagogique et opérationnel, version de travail.</p>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>

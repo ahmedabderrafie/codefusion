@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mon espace — CodeFusion Digital Explorers</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="demo">Démo de présentation : données fictives. Changez de rôle pour voir chaque espace.</div>
+<header class="app-h"><div class="wrap">
+<a class="brand" href="index.html"><i></i>CodeFusion Digital Explorers</a>
+<div class="seg roles" id="roles" aria-label="Voir en tant que"><button data-r="apprenant">Apprenant</button><button data-r="parent">Parent</button><button data-r="formateur">Formateur</button><button data-r="admin">Admin</button></div>
+<div class="me"><span class="av sm" id="me-av"></span><span id="me-n"></span></div>
+<a class="hlink" href="auth.html">Déconnexion</a>
+<button id="th" aria-label="Changer de thème">◐</button>
+</div></header>
+<div class="app">
+<aside class="side" id="side"></aside>
+<main class="dash" id="dash"></main>
+</div>
+<script src="espace.js"></script>
+</body>
+</html>
