@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CodeFusion Digital Explorers — Programme d’éducation numérique</title>
+<title>GDGSR Digital Explorers — Programme d’éducation numérique</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header><div class="wrap">
-<a class="brand" href="#top"><i></i>CodeFusion Digital Explorers</a>
+<a class="brand" href="#top"><i></i>GDGSR Digital Explorers</a>
 <nav aria-label="Navigation principale">
 <a href="#vision">Vision</a>
 <div class="dd"><button aria-expanded="false" aria-haspopup="true">Pédagogie</button><div class="menu"><a href="#parcours">Parcours</a><a href="#programme">Programme</a><a href="#seance">Séance</a><a href="#briefs">Briefs</a><a href="#competences">Compétences</a><a href="#evaluation">Évaluation</a></div></div>
@@ -23,9 +23,9 @@
 <main id="top">
 <div class="hero"><div class="wrap">
 <div>
-<small>CodeFusion</small>
+<small>GDGSR</small>
 <h1>Découvrir. Expérimenter. <span>Créer.</span> Innover.</h1>
-<p class="lead">Un programme annuel d’éducation numérique pour les jeunes du collège et du lycée : de la découverte du numérique à la réalisation de projets concrets.</p>
+<p class="lead">Un programme annuel d’éducation numérique pour les élèves du collège et du lycée : de la découverte du numérique à la réalisation de projets concrets.</p>
 <a class="btn" href="#parcours">Choisir un parcours</a><a class="btn ghost" href="#programme">Voir le programme</a>
 </div>
 <div class="term" aria-hidden="true"><div class="bar"><b></b><b></b><b></b></div><pre id="code"></pre></div>
@@ -50,8 +50,8 @@
 <label for="wk">Semaines de cours : <span id="wkv">36</span></label><input type="range" id="wk" min="20" max="48" value="36">
 <label for="spw">Séances par semaine : <span id="spwv">2</span></label><input type="range" id="spw" min="1" max="5" value="2">
 <label for="grp">Nombre de groupes : <span id="grpv">1</span></label><input type="range" id="grp" min="1" max="10" value="1">
-<label for="jpg">Jeunes par groupe : <span id="jpgv">15</span></label><input type="range" id="jpg" min="5" max="30" value="15"></div>
-<div><output id="hrs">144 h</output><p id="ses" style="margin-top:10px;color:#cfdaf0"></p><p id="tot" style="margin-top:10px;color:#cfdaf0"></p><p style="margin-top:10px;font-size:14px;color:#9fb0cf">Ajustez les paramètres pour estimer le volume horaire, le nombre de jeunes et les heures d’encadrement. Calendrier et effectifs restent à confirmer avant la budgétisation.</p></div>
+<label for="jpg">Élèves par groupe : <span id="jpgv">15</span></label><input type="range" id="jpg" min="5" max="30" value="15"></div>
+<div><output id="hrs">144 h</output><p id="ses" style="margin-top:10px;color:#cfdaf0"></p><p id="tot" style="margin-top:10px;color:#cfdaf0"></p><p style="margin-top:10px;font-size:14px;color:#9fb0cf">Ajustez les paramètres pour estimer le volume horaire, le nombre d’élèves et les heures d’encadrement. Calendrier et effectifs restent à confirmer avant la budgétisation.</p></div>
 </div>
 </div></section>
 
@@ -68,21 +68,25 @@
 </div></section>
 
 <section id="seance"><div class="wrap">
-<div class="hd rv"><h2>Une séance de 2 heures, orientée pratique</h2><p>La pratique occupe la majorité du temps : les jeunes expérimentent, se trompent, corrigent et expliquent leurs choix.</p></div>
+<div class="hd rv"><h2>Une séance de 2 heures, orientée pratique</h2><p>La pratique occupe la majorité du temps : les élèves expérimentent, se trompent, corrigent et expliquent leurs choix.</p></div>
 <div class="sess" id="sess"></div>
 <p class="sinfo" id="sinfo"></p>
 <div class="three rv" style="margin-top:54px"><div><span class="n">1</span><b>Imiter</b><p class="mut">Reproduire une solution avec accompagnement.</p></div><div><span class="n">2</span><b>Adapter</b><p class="mut">Modifier et améliorer une solution existante.</p></div><div><span class="n">3</span><b>Transposer</b><p class="mut">Réutiliser ses acquis dans un nouveau contexte.</p></div></div>
 <div class="ex rv"><b>Exemple en Python.</b> Reproduire une calculatrice guidée, puis ajouter des opérations et des contrôles, puis concevoir un outil personnel de suivi de notes.</div>
-<div class="card rv" style="margin-top:30px"><h3>Un projet organisé comme Scrum</h3><p class="mut">Un cadre léger pour deux séances par semaine, sans stand-up quotidien : backlog des besoins, sprint planning pour 1 à 2 semaines, point d’équipe de 5 minutes (fait, à faire, blocage), sprint review, puis rétrospective. Les rôles tournent pour découvrir plusieurs responsabilités.</p></div>
+<div class="g3 rv" style="margin-top:30px">
+<div class="card"><h3>Qu’est-ce que la pédagogie active ?</h3><p class="mut">Une approche où l’élève est acteur de ses apprentissages : il apprend en faisant, en expérimentant, en résolvant des problèmes concrets et en collaborant avec les autres. Le formateur guide et accompagne plutôt que de transmettre un cours magistral ; l’erreur devient une étape normale de l’apprentissage.</p></div>
+<div class="card"><h3>Qu’est-ce que Scrum ?</h3><p class="mut">Une méthode agile d’organisation du travail en équipe. Le projet avance par cycles courts appelés sprints : l’équipe choisit des tâches dans une liste priorisée (le backlog), les réalise, présente le résultat (sprint review) puis analyse son fonctionnement pour s’améliorer (rétrospective).</p></div>
+</div>
+<div class="card rv" style="margin-top:20px"><h3>Un projet organisé comme Scrum</h3><p class="mut">Un cadre léger pour deux séances par semaine, sans stand-up quotidien : backlog des besoins, sprint planning pour 1 à 2 semaines, point d’équipe de 5 minutes (fait, à faire, blocage), sprint review, puis rétrospective. Les rôles tournent pour découvrir plusieurs responsabilités.</p></div>
 </div></section>
 
 <section id="briefs" class="dk"><div class="wrap">
-<div class="hd rv"><h2>Chaque projet commence par un brief</h2><p>Comme en entreprise, les jeunes reçoivent une mission avec un contexte réel, des livrables et des critères connus dès le départ. Ils s’organisent, cherchent, produisent, puis présentent leur travail.</p></div>
+<div class="hd rv"><h2>Chaque projet commence par un brief</h2><p>Comme en entreprise, les élèves reçoivent une mission avec un contexte réel, des livrables et des critères connus dès le départ. Ils s’organisent, cherchent, produisent, puis présentent leur travail.</p></div>
 <div class="safe rv">
 <div><b>Contexte</b>La situation et le « client » : association, école, entreprise ou besoin local.</div>
 <div><b>Mission</b>Ce qu’il faut concevoir, formulé en une phrase claire.</div>
 <div><b>Livrables</b>Ce qui est rendu : code, dépôt GitHub, maquette, prototype, présentation.</div>
-<div><b>Critères de réussite</b>Comment le travail sera évalué, partagés avec les jeunes au lancement.</div>
+<div><b>Critères de réussite</b>Comment le travail sera évalué, partagés avec les élèves au lancement.</div>
 <div><b>Modalités</b>Durée, travail seul ou en équipe, ressources et jalons intermédiaires.</div>
 <div><b>Compétences visées</b>Les compétences du référentiel mobilisées et évaluées.</div>
 </div>
@@ -117,7 +121,7 @@
 </div></section>
 
 <section id="evenements" class="alt"><div class="wrap">
-<div class="hd rv"><h2>Des événements pour apprendre autrement</h2><p>Hackathons, visites d’entreprises, rencontres et défis rythment l’année : ils relient les apprentissages au monde réel et motivent les jeunes. Programme indicatif, à caler avec les partenaires. Filtrez par type.</p></div>
+<div class="hd rv"><h2>Des événements pour apprendre autrement</h2><p>Hackathons, visites d’entreprises, rencontres et défis rythment l’année : ils relient les apprentissages au monde réel et motivent les élèves. Programme indicatif, à caler avec les partenaires. Filtrez par type.</p></div>
 <div class="seg" id="evf"></div>
 <div class="ev" id="ev"></div>
 <div class="hd rv" style="margin-top:80px"><h2>Exemples de déroulé</h2><p>Des formats prêts à adapter selon les lieux, les partenaires et l’âge des participants.</p></div>
@@ -147,7 +151,7 @@
 <tr><td>Coordination administrative</td><td class="mut">Inscriptions, autorisations, communication et logistique.</td></tr>
 </tbody></table>
 <div class="g3 rv" style="margin-top:40px">
-<div class="card"><h3>Espaces et matériel</h3><p class="mut">Salle informatique, un poste par jeune si possible, connexion internet, vidéoprojecteur, stockage sécurisé, tables de prototypage.</p></div>
+<div class="card"><h3>Espaces et matériel</h3><p class="mut">Salle informatique, un poste par élève si possible, connexion internet, vidéoprojecteur, stockage sécurisé, tables de prototypage.</p></div>
 <div class="card"><h3>Kits et composants</h3><p class="mut">Micro:bit ou Arduino, ESP32 selon le parcours, capteurs, LED, moteurs, câbles, breadboards et consommables.</p></div>
 <div class="card"><h3>Environnement logiciel</h3><p class="mut">Python avec Thonny ou VS Code, Scratch et MakeCode, Git et GitHub, Figma ou Canva. Outils gratuits ou éducatifs en priorité.</p></div>
 </div>
@@ -173,8 +177,8 @@
 </main>
 
 <footer><div class="wrap">
-<h2>Donner aux jeunes le pouvoir de créer avec le numérique.</h2>
-<p>CodeFusion<br>Document de cadrage pédagogique et opérationnel, version de travail.</p>
+<h2>Donner aux élèves le pouvoir de créer avec le numérique.</h2>
+<p>GDGSR<br>Document de cadrage pédagogique et opérationnel, version de travail.</p>
 </div></footer>
 
 <script src="script.js"></script>

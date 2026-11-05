@@ -10,8 +10,8 @@ $$('#atabs button').forEach(b=>b.onclick=()=>{
 $$('.eye').forEach(b=>b.onclick=()=>{const i=b.previousElementSibling,show=i.type==='password';i.type=show?'text':'password';b.textContent=show?'Masquer':'Afficher'});
 
 // sign in (demo: redirects to the chosen role's space)
-let role='apprenant';
-const demo={apprenant:'yasmine.bennani',parent:'f.bennani@exemple.ma',formateur:'karim.elidrissi@codefusion.ma',admin:'admin@codefusion.ma'};
+let role='eleve';
+const demo={eleve:'yasmine.bennani',parent:'f.bennani@exemple.ma',formateur:'karim.elidrissi@gdgsr.ma',admin:'admin@gdgsr.ma'};
 const setRole=r=>{role=r;$$('#role button').forEach(b=>b.classList.toggle('on',b.dataset.r===r));$('#em').value=demo[r];$('#pw').value='demo1234'};
 $$('#role button').forEach(b=>b.onclick=()=>setRole(b.dataset.r));
 $('#fin').onsubmit=e=>{e.preventDefault();location.href='espace.html#'+role};

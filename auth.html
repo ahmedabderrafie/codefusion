@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Connexion — CodeFusion Digital Explorers</title>
+<title>Connexion — GDGSR Digital Explorers</title>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="app.css">
@@ -11,7 +11,7 @@
 <body>
 <div class="demo">Démo de présentation : données fictives, aucune information n’est enregistrée.</div>
 <header><div class="wrap">
-<a class="brand" href="index.html"><i></i>CodeFusion Digital Explorers</a>
+<a class="brand" href="index.html"><i></i>GDGSR Digital Explorers</a>
 <a class="hlink" href="index.html">← Retour au programme</a>
 <button id="th" aria-label="Changer de thème">◐</button>
 </div></header>
@@ -21,7 +21,7 @@
 <h1>Un espace pour suivre chaque parcours.</h1>
 <p>Une plateforme unique, trois accès adaptés à chaque rôle.</p>
 <ul>
-<li><span><b>Apprenant :</b> progression, projets, carnet, portfolio et événements.</span></li>
+<li><span><b>Élève :</b> progression, projets, carnet, portfolio et événements.</span></li>
 <li><span><b>Parent :</b> présences, autorisations, messages et progression de son enfant.</span></li>
 <li><span><b>Formateur :</b> appel, observations et évaluation des compétences.</span></li>
 <li><span><b>Administration :</b> inscriptions, groupes, autorisations et rôles.</span></li>
@@ -34,8 +34,8 @@
 <form id="fin" class="card">
 <h2>Bon retour</h2>
 <p class="mut">Connectez-vous à votre espace.</p>
-<div class="fld"><span>Je suis</span><div class="seg" id="role"><button type="button" data-r="apprenant" class="on">Apprenant</button><button type="button" data-r="parent">Parent</button><button type="button" data-r="formateur">Formateur</button><button type="button" data-r="admin">Admin</button></div></div>
-<label class="fld"><span>Identifiant ou e-mail</span><input id="em" type="text" autocomplete="username" placeholder="prenom.nom@codefusion.ma" value="yasmine.bennani" required></label>
+<div class="fld"><span>Je suis</span><div class="seg" id="role"><button type="button" data-r="eleve" class="on">Élève</button><button type="button" data-r="parent">Parent</button><button type="button" data-r="formateur">Formateur</button><button type="button" data-r="admin">Admin</button></div></div>
+<label class="fld"><span>Identifiant ou e-mail</span><input id="em" type="text" autocomplete="username" placeholder="prenom.nom@gdgsr.ma" value="yasmine.bennani" required></label>
 <label class="fld"><span>Mot de passe</span><div class="pw"><input id="pw" type="password" autocomplete="current-password" placeholder="8 caractères minimum" minlength="8" value="demo1234" required><button type="button" class="eye">Afficher</button></div></label>
 <div class="line"><label class="chk"><input type="checkbox" checked>Se souvenir de moi</label><a class="lnk" href="#fin">Mot de passe oublié ?</a></div>
 <button class="btn full">Se connecter</button>
@@ -43,11 +43,11 @@
 </form>
 
 <form id="fup" class="card" novalidate hidden>
-<h2>Inscription d’un jeune</h2>
+<h2>Inscription d’un élève</h2>
 <div class="stepper"><i class="on"></i><i></i><i></i></div>
 <p class="mut" id="sttl"></p>
 
-<div class="step" data-t="Le jeune">
+<div class="step" data-t="L’élève">
 <div class="row2">
 <label class="fld"><span>Prénom</span><input id="fn" autocomplete="given-name" placeholder="Prénom" value="Rayan" required></label>
 <label class="fld"><span>Nom</span><input autocomplete="family-name" placeholder="Nom" value="Kettani" required></label>
@@ -63,18 +63,18 @@
 <div class="step" data-t="Responsable légal">
 <div class="row2">
 <label class="fld"><span>Nom complet</span><input autocomplete="name" placeholder="Nom du parent ou tuteur" value="Samira Kettani" required></label>
-<label class="fld"><span>Lien avec le jeune</span><select required><option value="">Choisir…</option><option selected>Mère</option><option>Père</option><option>Tuteur légal</option></select></label>
+<label class="fld"><span>Lien avec l’élève</span><select required><option value="">Choisir…</option><option selected>Mère</option><option>Père</option><option>Tuteur légal</option></select></label>
 </div>
 <label class="fld"><span>Téléphone</span><input type="tel" autocomplete="tel" placeholder="+212 6XX XX XX XX" value="+212 6 61 23 45 67" required></label>
 <label class="fld"><span>E-mail</span><input type="email" autocomplete="email" placeholder="parent@exemple.ma" value="samira.kettani@exemple.ma" required></label>
-<p class="mut sm" style="margin:-4px 0 14px">Un compte parent est créé avec cette adresse pour suivre la progression du jeune.</p>
+<p class="mut sm" style="margin:-4px 0 14px">Un compte parent est créé avec cette adresse pour suivre la progression de l’élève.</p>
 </div>
 
 <div class="step" data-t="Compte et autorisations">
-<label class="fld"><span>Mot de passe du jeune</span><div class="pw"><input id="pw1" type="password" autocomplete="new-password" placeholder="8 caractères minimum" minlength="8" value="demo1234" required><button type="button" class="eye">Afficher</button></div></label>
+<label class="fld"><span>Mot de passe de l’élève</span><div class="pw"><input id="pw1" type="password" autocomplete="new-password" placeholder="8 caractères minimum" minlength="8" value="demo1234" required><button type="button" class="eye">Afficher</button></div></label>
 <label class="fld"><span>Confirmer le mot de passe</span><input id="pw2" type="password" autocomplete="new-password" value="demo1234" required></label>
-<label class="chk"><input type="checkbox" checked required><span>J’accepte la charte d’usage du numérique de CodeFusion.</span></label>
-<label class="chk"><input type="checkbox" checked required><span>Le responsable légal autorise la participation du jeune au programme.</span></label>
+<label class="chk"><input type="checkbox" checked required><span>J’accepte la charte d’usage du numérique de GDGSR.</span></label>
+<label class="chk"><input type="checkbox" checked required><span>Le responsable légal autorise la participation de l’élève au programme.</span></label>
 <label class="chk"><input type="checkbox" checked required><span>J’accepte le traitement des données personnelles, limité au suivi pédagogique.</span></label>
 <label class="chk"><input type="checkbox" checked><span>Droit à l’image : photos et vidéos autorisées pour la communication de l’école (facultatif).</span></label>
 </div>
@@ -87,7 +87,7 @@
 <div class="ic">✓</div>
 <h2>Demande envoyée</h2>
 <p class="mut">L’inscription de <b id="dn"></b> sera validée par l’administration après vérification de l’autorisation parentale. Le responsable légal recevra un e-mail de confirmation.</p>
-<a class="btn" href="espace.html#apprenant">Découvrir l’espace apprenant</a>
+<a class="btn" href="espace.html#eleve">Découvrir l’espace élève</a>
 </div>
 </div></div>
 </main>
